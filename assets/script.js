@@ -19,7 +19,7 @@
 		
 		// myLine.innerHTML += '<div class="patternUnit" style="background-color: rgb(${changingColor},0,${changingColor}; transform: rotate('+ (90 + (10*i)) +'deg);"></div>';
 			var myCollection = `<div class="myCollection" style="transform: rotate(${i*180}deg);">${myLines}</div>`;
-			myLine.innerHTML += myCollection;
+			myLine.insertAdjacentHTML('beforeend', myCollection);
 	}
 
 
